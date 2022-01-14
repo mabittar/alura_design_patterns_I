@@ -7,7 +7,7 @@ class Orcamento(object):
         self.__itens = []
 
     @property
-    def valor(self):
+    def valor(self) -> Decimal:
         total = Decimal(0)
         for item in self.__itens:
             total += Decimal(item.valor)
