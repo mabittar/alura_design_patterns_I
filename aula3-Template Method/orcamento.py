@@ -11,7 +11,7 @@ class Orcamento(object):
         total = Decimal(0)
         for item in self.__itens:
             total += Decimal(item.valor)
-        return total
+        return total.quantize(Decimal("1.00"))
         
     def obter_itens(self):
         return tuple(self.__itens)
