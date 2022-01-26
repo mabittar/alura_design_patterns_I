@@ -51,3 +51,11 @@ O Decorator é para compor e dividir comportamento em fatias onde cada fatia (ob
 ### Quando devemos aplicar o padrão Decorator?
 
 Sempre que percebemos que temos comportamentos que podem ser formados por comportamentos de outras classes envolvidas em uma mesma hierarquia, como foi o caso dos impostos, que podem ser composto por outros impostos. O Decorator introduz a flexibilidade na composição desses comportamentos, bastando escolher no momento da instanciação, quais instancias serão utilizadas para realizar o trabalho.
+
+
+## State - Aula5
+Nossos orçamentos podem ter diferentes estados durante o seu ciclo de vida. Um orçamento nasce "Em aprovação" e pode virar "Aprovado" ou "Reprovado". Ao final de todo o processo, deverá ser "Finalizado". Dependendo do estado que o orçamento se encontra, algumas ações podem ser diferentes. 
+A longo prazo é importante pensar na manutenção do seu código, tendo em vista a certeza de que seu código vai mudar. A solução procedural é fácil de se implementar, mas difícil de manter. Já, a consideração da aplicação de um padrão de projeto pode ser demorada, mas surte efeitos na manutenção e legibilidade do seu código.
+
+### Quando devemos aplicar o padrão State?
+A principal situação que faz emergir o Design Pattern State é a necessidade de implementação de uma máquina de estados. Geralmente, o controle das possíveis transições entre estados são várias, também são complexas, fazendo com que a implementação não seja simples. O State auxilia a manter o controle dos estados simples e organizados, através da criação de classes que representem cada estado e sabendo controlar as transições entre eles.
